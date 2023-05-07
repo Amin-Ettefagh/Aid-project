@@ -5,13 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*استایل کلی متن و عکس ها*/
+        .Data {
+            width: 50%;
+            margin: 0 auto;
+            padding: 25px;
+            border: 1px;
+            border-style: solid;
+            border-radius: 15px;
+        }
+        img {
+            width: 100%;
+            height: 500px;
+        }
+        /*استایل دکمه صفحه نخست*/
+        .floating-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #24262b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          .floating-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+          }
+          /*استایل فوتر*/
+          .footer {
+            width: 100%;
+            background: #00121b;
+            display: block;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+         }
+         .inner-footer {
+             width: 95%;
+             margin: auto;
+             padding: 30px 10px;
+             display: flex;
+             flex-wrap: wrap;
+             box-sizing: border-box;
+             justify-content: center;
+         }
+        .footer-items {
+            width: 25%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .footer-items p {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 25px;
+            color: #fff;
+        }
+        .footer-items h1 {
+            color: #fff;
+        }
+        .Ilogo {
+            width: 150px;
+            height: 150px;
+        }
+        .border1 {
+            height: 3px;
+            width: 40px;
+            border: 0px;
+        }
+        ul {
+            list-style: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 0.5px;	
+         }
+        ul a {
+            text-decoration: none;
+            font-size: 20px;
+            outline: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+        ul li {
+            margin: 10px 0;
+            height: 25px;
+        }
+        @media screen and (max-width: 1275px) {
+            .footer-items {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 660px) {
+            .footer-items {
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
-
+    <!-- دکمه صفحه نخست -->
+    <a href="index.html" class="floating-button">صفحه نخست</a>
+    <!-- متن و عکس -->
     <div>
-        <div class="Text-data">
-            <h1 class="" dir="rtl">سی پی آر</h1>
+        <div class="Data">
+            <h1 class="" dir="rtl" style="color : red">سی پی آر</h1>
+            <img src="cpr-picture-1.jpg" alt="سی پی آر" />
             <p class="" dir="rtl">دستگاه عصبی مرکزی ، قلب و تنفس ارتباط تنگاتنگی باهمدیگر دارند و اسیب اولیه به یکی از انها میتواند باعث اختلال عملکرد دو دستگاه دیگر شود که در موارد باید اقدام به عملیات احیا کرد.
                 احیا قلبی ریوی مجموعه ای از عملیات های حفظ حیات است که باعث بهبود شانس بقا به دنبال ایست قلبی میشود.با وجود پیشرفت های مهم در زمینه پیشگیری از از اختلالات قلبی، ایست قلبی ناگهانی همچنان به عنوان یکی از مهمترین عوامل تهدید کننده سلامت انسان است باعث مرگ بسیاری از افراد در نقاط مختلف جهان میشود.</p>
             <div class="" dir="rtl">
@@ -124,12 +233,27 @@
                 </ol>
                 <p class="" dir="rtl">پس از قرار دادن مصدوم در این وضعیت روی او یک پتو بکشید و اگر توانستید زیر او را هم بپوشانید.</p>
                 <strong class="" dir="rtl">اگر برای رسیدن اورژانس معطل شدید میزان تنفس و سطح هوشیاری را هر 10 دقیقه چک کنید!</strong>
+                <img src="cpr-picture-2.jpg" alt="سی پر آر" />
             </div>
         </div>
-
-        <img src="cpr-picture-1.jpg" alt="سی پی آر" />
-        <img src="cpr-picture-2.jpg" alt="سی پر آر" />
     </div>
-
+    <!-- فوتر -->
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <div class="border1">
+                    <img class="Ilogo" src="logo.png" alt="Alborz University of Medical Sciences">
+                </div>
+            </div>
+        <div class="footer-items">
+            <div class="border1"></div>
+                <ul dir="rtl">
+                    <li><a class="Llink" href="#" style="color: #bbbbbb">گروه آموزش به بیمار</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">فلش کارت</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">آدرس برنامه ما</a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
 </body>
 </html>
