@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aid-project</title>
+    <style>
+        body {
+            line-height: 1.5;
+        }
+        *
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background-color: #f2f2f2;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .box:hover {
+            transform: scale(1.1);
+        }
+        li {
+            list-style-type : none;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            justify-content: stretch;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box" class="grid-container" id="poisoning">مسمومیت</div>
+        <div class="box" class="grid-container" id="suffocation">خفگی</div>
+        <div class="box" class="grid-container" id="choking">گاز گرفتگی</div>
+        <div class="box" class="grid-container" id="cpr">سی پی آر</div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="rom">
+                <div class="footer-col">
+                    <img src="logo.png" alt="Alborz University of Medical Sciences">
+                </div>
+                <div class="footer-col">
+                    <ul dir="rtl">
+                        <li><p></p>گروه آموزش به بیمار</li>
+                        <li><a href="#">فلش کارت</a></li>
+                        <li><a href="#">آدرس برنامه ما</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("poisoning").addEventListener("click", function() {
+            window.location.href = "poisoning.html";});
+        document.getElementById("suffocation").addEventListener("click", function(){
+            window.location.href = "suffocation.html"})
+        document.getElementById("choking").addEventListener("click", function(){
+                window.location.href = "choking.html"})
+        document.getElementById("cpr").addEventListener("click", function(){
+                    window.location.href = "cpr.html"})
+    </script>
+</body>
+</html>
