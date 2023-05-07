@@ -5,13 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         /*استایل کلی متن و عکس ها*/
+         .Data {
+            width: 50%;
+            margin: 0 auto;
+            padding: 25px;
+            border: 1px;
+            border-style: solid;
+            border-radius: 15px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        /*استایل دکمه صفحه نخست*/
+        .floating-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #24262b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          .floating-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+          }
+          /*استایل فوتر*/
+          .footer {
+            width: 100%;
+            background: #00121b;
+            display: block;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+         }
+         .inner-footer {
+             width: 95%;
+             margin: auto;
+             padding: 30px 10px;
+             display: flex;
+             flex-wrap: wrap;
+             box-sizing: border-box;
+             justify-content: center;
+         }
+        .footer-items {
+            width: 25%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .footer-items p {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 25px;
+            color: #fff;
+        }
+        .footer-items h1 {
+            color: #fff;
+        }
+        .Ilogo {
+            width: 150px;
+            height: 150px;
+        }
+        .border1 {
+            height: 3px;
+            width: 40px;
+            border: 0px;
+        }
+        ul {
+            list-style: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 0.5px;	
+         }
+        ul a {
+            text-decoration: none;
+            font-size: 20px;
+            outline: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+        ul li {
+            margin: 10px 0;
+            height: 25px;
+        }
+        @media screen and (max-width: 1275px) {
+            .footer-items {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 660px) {
+            .footer-items {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
+    <!-- صفحه نخست -->
+    <a href="index.html" class="floating-button">صفحه نخست</a>
+    <!-- متن و عکس -->
     <div>
-        <div class="Text-data">
-            <h1 class="" dir="rtl">گاز گرفتگی</h1>
+        <div class="Data">
+            <h1 class="" dir="rtl" style="color : red">گاز گرفتگی</h1>
+            <img src="choking-picture-1.jpg" alt="گاز گرفنگی" />
             <p class="" dir="rtl">انسان همواره با پدیده مسمومیت به اشکال گوناگونی دست به گریبان بوده و دامنه این مسمومیت از خوردن گیاهان و مواد سمی گرفته تا مسمومیت با داروها و غذاها متغیر است. همچنین با اضافه شدن مواد مضر ساخت بشر، محیط زیست بیش از پیش الوده شده و این امر شیوع مسمومیت را افزایش میدهد. مسمومیت یکی ا اورژانس های پزشکی است که نیاز به اقدامات اولیه و پس از ان اقدامات پزشکی دارد. از این رو مطالعات کافی در این مرد میتواند منجر به نجات جان مصدومان و پیشگیری از بروز عوارض ناش یاز مسمومیت شود.</p>
             <div class="" dir="rtl"> 
                 <h2 class="" dir="rtl">مسمومیت :</h2>
@@ -27,6 +135,7 @@
                 <li>جذب پوستی</li>
                 <li>تزریق سم</li>
             </ul>
+            <img src="choking-picture-2.jpg" alt="گاز گرفنگی" />
             <div class="" dir="rtl">
                 <p class="" dir="rtl">تشخیص مسمومیت :</p>
                 <strong class="" dir="rtl">در برخورد با هر بیماری شدید که هیچ گونه علت یا تفسیری برای ان یافت نمیشود ، به مسمومیت مشکوک شوید.</strong>
@@ -103,14 +212,28 @@
                     <p class="" dir="rtl">اگر فرد هنوز مسموم هنوز استفراغ نکرده است و شما میتوانید در مدت 10 دقیقه او را به بیمارستان برسانید.او را وادار به استفراغ نکنید اما از رساندن مصدوم به بیمارستان بیش از 30 دقیقه طول میکشد او را وادار به استفراغ کنید.
                         اگر از بی خطر بودن استفراغ در فرد مسموم مطمین نیستید او را وادار به استفراغ نکنید بلکه او را به سرعت به مراکز درمانی برسانید.
                         هنگام استفراغ مصدوم باید به سمت جلو متمایل بوده و سر و دهانش رو به پایین قرار گیرد تا احتمال ورود مواد به راه های هوایی به حداقل برسد. در صورتی که موفق به ایجاد استفراغ در مصدوم نشدید سریعا مصدوم را به مرکز درمانی برسانید.</p>
+                    <img src="choking-picture-3.jpg" alt="گاز گرفنگی" />
                 </div>
             </div>
         </div>
-
-        <img src="choking-picture-1.jpg" alt="گاز گرفنگی" />
-        <img src="choking-picture-2.jpg" alt="گاز گرفنگی" />
-        <img src="choking-picture-3.jpg" alt="گاز گرفنگی" />
     </div>
-
+    <!-- فوتر -->
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <div class="border1">
+                    <img class="Ilogo" src="logo.png" alt="Alborz University of Medical Sciences">
+                </div>
+            </div>
+        <div class="footer-items">
+            <div class="border1"></div>
+                <ul dir="rtl">
+                    <li><a class="Llink" href="#" style="color: #bbbbbb">گروه آموزش به بیمار</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">فلش کارت</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">آدرس برنامه ما</a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
 </body>
 </html>
