@@ -5,13 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         /*استایل کلی متن و عکس ها*/
+         .Data {
+            width: 50%;
+            margin: 0 auto;
+            padding: 25px;
+            border: 1px;
+            border-style: solid;
+            border-radius: 15px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        /*استایل دکمه صفحه نخست*/
+        .floating-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #24262b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+          .floating-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+          }
+          /*استایل فوتر*/
+          .footer {
+            width: 100%;
+            background: #00121b;
+            display: block;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+         }
+         .inner-footer {
+             width: 95%;
+             margin: auto;
+             padding: 30px 10px;
+             display: flex;
+             flex-wrap: wrap;
+             box-sizing: border-box;
+             justify-content: center;
+         }
+        .footer-items {
+            width: 25%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .footer-items p {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 25px;
+            color: #fff;
+        }
+        .footer-items h1 {
+            color: #fff;
+        }
+        .Ilogo {
+            width: 150px;
+            height: 150px;
+        }
+        .border1 {
+            height: 3px;
+            width: 40px;
+            border: 0px;
+        }
+        ul {
+            list-style: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 0.5px;	
+         }
+        ul a {
+            text-decoration: none;
+            font-size: 20px;
+            outline: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+        ul li {
+            margin: 10px 0;
+            height: 25px;
+        }
+        @media screen and (max-width: 1275px) {
+            .footer-items {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 660px) {
+            .footer-items {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
+    <!-- دکمه صفحه نخست -->
+    <a href="index.html" class="floating-button">صفحه نخست</a>
+    <!-- متن و عکس -->
     <div>
-        <div class="Text-data">
-            <h1 class="" dir="rtl">خفگی</h1>
+        <div class="Data">
+            <h1 class="" dir="rtl" style="color : red">خفگی</h1>
+            <img src="suffocation-picture-1.jpg" alt="خفگی" />
             <p class="" dir="rtl">گاهی به علت وجود جسم خارجی در گلو حالت خفگی و انسداد راه هوایی پیدا میشود.حتی بعضی اوقات جسم خارجی نظیر لقمه غدا به جای اینکه در مجرای گوارش برود به مجرای هوایی میرود.
                 بند امدن تنفس میتواند به علت انقباض عضلات گلو هم باشد،در برگسالان ممکن است در اثر نجویدن کامل غذا یا عجله قورت دادن لقمه دچار بند امدن تنفس شود. گاهی در اثر صحبت کردن هم این حالت پیش می اید.
                 شایع ترین جسم خارجی در بزرگسالان لقمه غذا میباشد، ولی در کودکان اجسام خارجی مختلف میتوانند در گیر کنند.اجسام خارجی ممکن است باعث انسداد شدید یا نسبی در راه های هوایی شود.</p>
@@ -29,6 +137,7 @@
             <h2 class="" dir="rtl">گروهای پر خطر :</h2>  
             <p class="" dir="rtl">برخی از گروه‌های جمعیتی خطر خفگی بیشتری دارند، مانند: افراد مسن، کودکان، معلولان (از نظر جسمی یا روحی)، افراد تحت تأثیر الکل یا مواد مخدر ، افرادی که داروهایی مصرف کرده‌اند که به‌طور جدی توانایی بزاق دهان یا واکنش را کاهش می‌دهد، بیماران با مشکلات بلع ، افراد دارای سابقه خودکشی، صرع، افراد مبتلا به اختلالات مانند پیکا که آنها را به سمت مصرف اجسام غیرقابل خوردن و غیره سوق می‌دهد. در مواردی که فرد قادر به خوردن غذا با خیال راحت نیست یا افرادی که غذا را با سرنگ در دهانشان میریزند.</p>
             <h2 class="" dir="rtl">اقدامات اولیه در بزرگسالان  :</h2>
+            <img src="suffocation-picture-2.jpg" alt="خفگی" />
             <h2 class="" dir="rtl"></h2>  
             <ol class="" dir="rtl">
                 <li>ا او بپرسید چه اتفاقی افتاده است؟ ایا چیزی در گلویت گیر کرده است؟این فرد همیشه گلویش را گرفته و به گلویش.</li>
@@ -92,14 +201,27 @@
                 <h3>, Darrell Lee; Chan, Theodore C (2006). Sudden Deaths in Custody. ISBN 978-1-59745-015-7.
                     THYGERSON AHTON >GULI BENGAMIN.FIRST AID 2005.
                     Kramarow, Ellen; Warner, Margaret; Chen, Li-Hui (2014). "Food-related choking deaths among the elderly". Injury Prevention. 20 (3): 200–203.</h3>
+                <img src="suffocation-picture-3.jpg" alt="خفگی" />
             </div>
-
         </div>
-
-        <img src="suffocation-picture-1.jpg" alt="خفگی" />
-        <img src="suffocation-picture-2.jpg" alt="خفگی" />
-        <img src="suffocation-picture-3.jpg" alt="خفگی" />
     </div>
-
+    <!-- فوتر -->
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <div class="border1">
+                    <img class="Ilogo" src="logo.png" alt="Alborz University of Medical Sciences">
+                </div>
+            </div>
+        <div class="footer-items">
+            <div class="border1"></div>
+                <ul dir="rtl">
+                    <li><a class="Llink" href="#" style="color: #bbbbbb">گروه آموزش به بیمار</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">فلش کارت</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">آدرس برنامه ما</a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
 </body>
 </html>
