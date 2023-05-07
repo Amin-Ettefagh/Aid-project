@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aid-project</title>
     <style>
+        /*استایل کلی صفحه*/
         body {
             line-height: 1.5;
         }
-        *
         .container {
-            display: flex;
+            display: grid;
             flex-wrap: wrap;
             justify-content: center;
+            align-content: center;
+            justify-items: center;
             align-items: center;
             height: 100vh;
         }
         .box {
-            background-color: #f2f2f2;
+            background-color: #7e7efc;
             width: 200px;
             height: 200px;
             margin: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             font-size: 20px;
             font-weight: bold;
             text-align: center;
@@ -41,37 +43,107 @@
         }
         .grid-container{
             display: grid;
-            grid-template-columns:auto auto auto auto;
-            justify-content: stretch;
-            
+            grid-template-columns:auto auto;
+            justify-content: center;
+            align-content: center;
+        }
+        /*استایل فوتر*/
+        .footer {
+            width: 100%;
+            background: #00121b;
+            display: block;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+         }
+         .inner-footer {
+             width: 95%;
+             margin: auto;
+             padding: 30px 10px;
+             display: flex;
+             flex-wrap: wrap;
+             box-sizing: border-box;
+             justify-content: center;
+         }
+        .footer-items {
+            width: 25%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .footer-items p {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 25px;
+            color: #fff;
+        }
+        .footer-items h1 {
+            color: #fff;
+        }
+        img{
+            height: 150px;
+        }
+        .border1 {
+            height: 3px;
+            width: 40px;
+            border: 0px;
+        }
+        ul {
+            list-style: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 0.5px;	
+         }
+        ul a {
+            text-decoration: none;
+            font-size: 20px;
+            outline: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+        ul li {
+            margin: 10px 0;
+            height: 25px;
+        }
+        @media screen and (max-width: 1275px) {
+            .footer-items {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 660px) {
+            .footer-items {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- باکس ها -->
     <div class="grid-container">
         <div class="box" class="grid-container" id="poisoning">مسمومیت</div>
         <div class="box" class="grid-container" id="suffocation">خفگی</div>
         <div class="box" class="grid-container" id="choking">گاز گرفتگی</div>
         <div class="box" class="grid-container" id="cpr">سی پی آر</div>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="rom">
-                <div class="footer-col">
+    <!-- فوتر -->
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <div class="border1">
                     <img src="logo.png" alt="Alborz University of Medical Sciences">
                 </div>
-                <div class="footer-col">
-                    <ul dir="rtl">
-                        <li><p></p>گروه آموزش به بیمار</li>
-                        <li><a href="#">فلش کارت</a></li>
-                        <li><a href="#">آدرس برنامه ما</a></li>
-                    </ul>
-                </div>
             </div>
+        <div class="footer-items">
+            <div class="border1"></div>
+                <ul dir="rtl">
+                    <li><a class="Llink" href="#" style="color: #bbbbbb">گروه آموزش به بیمار</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">فلش کارت</a></li>
+                    <li><a class="Llink" href="#" style="color: #df0404">آدرس برنامه ما</a></li>
+                </ul>
+            </div>   
         </div>
-    </footer>
-    
+    <!-- کد js -->
     <script>
         document.getElementById("poisoning").addEventListener("click", function() {
             window.location.href = "poisoning.html";});
