@@ -38,93 +38,80 @@
         .box:hover {
             transform: scale(1.1);
         }
-        li {
-            list-style-type : none;
-        }
         .grid-container{
             display: grid;
             grid-template-columns:auto auto;
             justify-content: center;
             align-content: center;
         }
+        li {
+            list-style-type : none;
+        }
         /*استایل فوتر*/
         .footer {
             width: 100%;
-            background: #00121b;
-            display: block;
+            height: auto;
+            background-color: #00121b;
+            color: #fff;
             position: fixed;
             bottom: 0;
-            right: 0;
             left: 0;
-         }
-         .inner-footer {
-             width: 95%;
-             margin: auto;
-             padding: 30px 10px;
-             display: flex;
-             flex-wrap: wrap;
-             box-sizing: border-box;
-             justify-content: center;
-         }
-        .footer-items {
-            width: 25%;
-            padding: 10px 20px;
-            box-sizing: border-box;
-            color: #fff;
-        }
-        .footer-items p {
-            font-size: 16px;
-            text-align: justify;
-            line-height: 25px;
-            color: #fff;
-        }
-        .footer-items h1 {
-            color: #fff;
-        }
-        img{
+          }
+          
+          .inner-footer {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+          }
+          
+          .border1 {
+            padding: 10px;
+            text-align: center;
+          }
+          
+          .border1 img {
+            width: 150px;
             height: 150px;
-        }
-        .border1 {
-            height: 3px;
-            width: 40px;
-            border: 0px;
-        }
-        ul {
+          }
+          
+          .Lul {
             list-style: none;
-            color: #fff;
-            font-size: 15px;
-            letter-spacing: 0.5px;	
-         }
-        ul a {
-            text-decoration: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .Lli {
+            margin: 5px 0;
             font-size: 20px;
-            outline: none;
+          }
+          
+          .Llink {
             color: #fff;
-            transition: 0.3s;
-        }
-        ul li {
-            margin: 10px 0;
-            height: 25px;
-        }
-        @media screen and (max-width: 1275px) {
-            .footer-items {
-                width: 50%;
-            }
-        }
-        @media screen and (max-width: 660px) {
-            .footer-items {
-                width: 100%;
-            }
-        }
+            text-decoration: none;
+          }
+          
+          .Lli:last-child {
+            margin-bottom: 0;
+          }
+          
+          .footer-items:last-child {
+            width: 25%;
+            text-align: right;
+            padding-right: 25px;
+          }
     </style>
 </head>
 <body>
     <!-- باکس ها -->
     <div class="grid-container">
-        <div class="box" class="grid-container" id="poisoning">مسمومیت</div>
-        <div class="box" class="grid-container" id="suffocation">خفگی</div>
-        <div class="box" class="grid-container" id="choking">گاز گرفتگی</div>
-        <div class="box" class="grid-container" id="cpr">سی پی آر</div>
+        <div class="box" id="poisoning">مسمومیت</div>
+        <div class="box" id="suffocation">خفگی</div>
+        <div class="box" id="choking">گاز گرفتگی</div>
+        <div class="box" id="cpr">سی پی آر</div>
     </div>
     <!-- فوتر -->
     <div class="footer">
@@ -135,18 +122,19 @@
                 </div>
             </div>
         <div class="footer-items">
-            <div class="border1"></div>
-                <ul dir="rtl">
-                    <li><a class="Llink" href="#" style="color: #bbbbbb">گروه آموزش به بیمار</a></li>
-                    <li><a class="Llink" href="#" style="color: #df0404">فلش کارت</a></li>
-                    <li><a class="Llink" href="#" style="color: #df0404">آدرس برنامه ما</a></li>
-                </ul>
+            <div class="border1">
+                <ul dir="rtl" class="Lul">
+                    <li class="Lli"><a class="Llink" href="#" style="color: #bbbbbb">گروه آموزش به بیمار</a></li>
+                    <li class="Lli"><a class="Llink" href="https://survey.porsline.ir/s/c3r94dBz" style="color: #df0404">لینک پرسشنامه</a></li>
+                    <li class="Lli"><a class="Llink" href="https://ubacoda.com/flashcards" style="color: #df0404">لینک برنامه فلش کارت با کد (66b198c103)</a></li>
+                    <li class="Lli"><a class="Llink" href="https://drive.google.com/file/d/1e_nAMWWmFoTXlLcDTbMm_QYg4sW6cw7_/view?usp=drivesdk" style="color: #df0404">دانلود برنامه</a></li>
+                </ul>   
             </div>   
         </div>
     <!-- کد js -->
     <script>
         document.getElementById("poisoning").addEventListener("click", function() {
-            window.location.href = "poisoning.html";});
+            window.location.href = "poisoning.html";})
         document.getElementById("suffocation").addEventListener("click", function(){
             window.location.href = "suffocation.html"})
         document.getElementById("choking").addEventListener("click", function(){
